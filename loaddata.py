@@ -22,3 +22,4 @@ va['va']=1
 processedData = pd.concat([cleaveland,hungarian,switzerland,va])
 
 processedData['chol'] = processedData.apply(lambda x: x.chol if x.chol > 0 else np.nan, axis=1)
+processedData['pain'] = processedData.apply(lambda x: 0 if x.cp == 4 else 1, axis=1)
