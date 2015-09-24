@@ -33,4 +33,4 @@ processedData['slope_downsloping'] = processedData.apply(lambda x: 1 if x.slope 
 processedData['thal_normal'] = processedData.apply(lambda x: 1 if x.thal == 3 else 0, axis=1)
 processedData['thal_fixed'] = processedData.apply(lambda x: 1 if x.thal == 6 else 0, axis=1)
 processedData['thal_reversible'] = processedData.apply(lambda x: 1 if x.thal == 7 else 0, axis=1)
-processedData['heart_disease'] = processedData.apply(lambda x: 0 if x.thal == 0 else 1, axis=1)
+processedData['heart_disease'] = processedData.apply(lambda x: 0 if x.num == 0 else 1, axis=1)
