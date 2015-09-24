@@ -1,6 +1,7 @@
 
 import pandas as pd
 import os
+import numpy as np
 
 cleaveland = pd.read_csv(os.path.join('.','data','processed.cleveland.data'),names=['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal','num'], na_values=[-9.0,'?'])
 hungarian = pd.read_csv(os.path.join('.','data','reprocessed.hungarian.data'),sep=' ',names=['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal','num'], na_values=[-9.0,'?'])
